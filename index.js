@@ -1,3 +1,4 @@
+"use strict";
 /* let age:number=10;
 let employeeName:string='Balaji';
 let isMajor:boolean=true;
@@ -14,17 +15,13 @@ let employyeeDetails:{name:string,
 }
 console.log(employyeeDetails);
  */
-
-import { Employee } from "./employee.type";
-
-
-let employes : any[]=[
-    { age: undefined, isMajor:true},
-    {age:20,isMajor:null}
+Object.defineProperty(exports, "__esModule", { value: true });
+var employes = [
+    { age: undefined, isMajor: true },
+    { age: 20, isMajor: null }
 ];
 //let newEmployee=employes as Employee[];
-let newEmployee=<Employee[]>employes;
-if(newEmployee[0].firstName){
-    console.log(newEmployee[0].firstName!);
+var newEmployee = employes;
+if (newEmployee[0].name) {
+    console.log(newEmployee[0].name);
 }
-
