@@ -1,0 +1,5 @@
+Release 1.0.0
+
+- ✨ New login system
+- 🐛 Fixed pagination bug
+- ⚡ Optimized loading speed
