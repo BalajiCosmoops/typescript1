@@ -6,9 +6,13 @@ var person = {
     age: 20,
     isMajor: true
 };
-function getFullName(person) {
-    var fullName = person.firstName + " " + person.lastName;
-    return fullName;
-}
+var getFullName = function (person) { return person.firstName + " " + person.lastName; };
 var fullName = getFullName(person); //typecast
+//Ana
 console.log(fullName);
+//rest parameter
+/* function test(...names:any[]){
+    console.log(names);
+    
+}
+test("balaji","sri","dhana","teena") */
