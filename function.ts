@@ -19,10 +19,15 @@ const person:Employee={
     age:20,
     isMajor:true
 };
-function getFullName(person:Employee):string{
-    const fullName=person.firstName+" "+person.lastName;
-    return fullName;
-}
-let fullName:string=getFullName(person) //typecast
+const getFullName= (person:Employee):string=>person.firstName+" "+person.lastName;
 
+let fullName:string=getFullName(person) //typecast
+//Ana
 console.log(fullName);
+//rest parameter
+/* function test(...names:any[]){
+    console.log(names);
+    
+}
+test("balaji","sri","dhana","teena") */
+
