@@ -14,14 +14,43 @@
 //     return {name:"Balaji",price:399}
 // }
 
+// type User={
+//     name:string;
+//     email:string;
+//     isActive:boolean;
+// }
+
+// function createUser(user:User){
+//     return {name:"",email:"",isActive:true}
+// }
+// createUser({name:"",email:"",isActive:true})
+// export {}
+
+
 type User={
+    readonly  _id:string;
     name:string;
     email:string;
-    isActive:boolean;
+    isActive: boolean;
+    creditCardDetails?:number;
 }
 
-function createUser(user:User){
-    return {name:"",email:"",isActive:true}
+let myUser:User={
+    _id: "12345",
+    name: "Balaji",
+    email:"balaji",
+    isActive:true,
 }
-createUser({name:"",email:"",isActive:true})
-export {}
+
+myUser.email="balji@gmail";
+//myUser._id="123"
+
+type cardNumber={
+    cardNumber:String;
+}
+type cardDate={
+    cardDate:number;
+}
+type cardDetails= cardNumber & cardDate & {
+    Cvv:number;
+}
